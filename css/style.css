@@ -1,0 +1,521 @@
+*{
+    margin: 0rem;
+    padding: 0rem;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body{
+
+    padding-top: 8rem;
+    width: 100%;
+    font-family: "heebo",sans-serif;
+    background-image: url("../images/heroimages/indexbcgimg1.jpg");
+    background-attachment:  fixed;
+    animation: bodybcganim 10s infinite linear;
+        
+}
+
+@keyframes bodybcganim {
+    0% {background-image: url("../images/heroimages/indexbcgimg1.jpg");}
+    50%{background-image: url("../images/heroimages/indexbcgimg.jpg");}
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+
+header{
+    width: 100%;
+    height: 8rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0.9;    
+    background-image: url("../images/heroimages/indexbcgimg1.jpg");
+    animation: bodybcganim 10s infinite linear;
+    border-bottom: .2rem solid white;
+
+}
+
+
+header .container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+
+}
+
+
+
+header a{
+    height: 90%;
+    width: 10%;
+}
+
+
+header img{
+    height: 90%;
+    margin: auto;
+}
+
+
+
+header h1{
+    width: 90%;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+
+
+
+}
+
+nav {
+    height: 3.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: .2rem solid white;
+    background-color: none;
+    transition: background-color 400ms linear ;
+
+}
+
+nav:hover {
+  background-color: rgba(0,0,0,1);
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 2rem;
+    color: white;
+
+}
+
+nav a:hover{
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-decoration: underline;   
+    max-height: 3.9rem;
+    
+}
+
+.hero {
+    height: 75rem;
+    background-image: url("../images/heroimages/hero_image10.jpg");
+    background-size: cover;
+    animation: heroanim 15s infinite linear;
+    border: .1rem solid white;
+    box-shadow: .1rem .1rem .2rem .2rem white;
+}  
+
+@keyframes heroanim {
+    0%{background-image: url("../images/heroimages/hero_image10.jpg");}
+    33%{background-image: url("../images/heroimages/heroelectrical.jpg");}
+    66%{background-image: url("../images/heroimages/herokitchen.jpg");}
+
+}
+
+
+.hero .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    text-align: center;
+}
+
+
+.hero .container .heroleftside{
+    height: 100%;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    width: 70%;
+    font-size: 2.5rem;
+
+}  
+
+.hero .heroleftside p{
+    font-size: 3rem;
+
+}  
+
+
+.hero .heroleftside a{
+    color: white;
+    font-size: 2.7rem;
+
+}  
+
+
+
+.hero aside {
+    width: 30%;
+    height: 70%;
+    margin: auto 2rem;
+    border: .1rem solid white;
+    box-shadow: .1rem .1rem .2rem .2rem lightgray;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    transition: all 300ms linear;
+
+}
+
+.hero aside:hover{
+    background-color: rgba(0,0,0,1);
+    height: 80%;
+    cursor: pointer;
+    line-height: 3rem;
+
+
+}
+
+.hero aside h2 {
+    margin: 4.5rem 2rem;    
+    font-size: 2.5rem;
+    text-align: center;
+    letter-spacing: .1em;
+    text-decoration: underline;
+}
+
+
+.hero aside ul {
+    height: 70%;
+    margin:0px auto;
+    max-width: 90%;
+    overflow: auto;
+    text-align: left;
+}
+
+.hero aside ul summary{
+    font-size: 2rem;
+    line-height: 2.5rem;
+    transition: font-size 200ms linear;
+
+}
+
+.hero aside ul summary:hover{
+    font-size: 2.5rem;
+
+}
+
+li {
+    list-style-type: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 2.5rem;
+    margin: 2rem 0rem;
+    letter-spacing: .1rem;
+    transition: font-size 90ms linear;
+
+}
+
+
+li :hover{
+    font-size: 2rem;
+}
+
+
+
+.maincontainer {
+    width: 100%;
+    color: white;
+}
+
+
+.maincontainer .container {
+    width: 80%;
+    margin: auto;
+}
+
+.maincontainer .container .producttypesection h2{
+    margin: 4rem 0rem;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: normal;
+    width: 100%;
+    letter-spacing: .2rem;
+}
+
+hr {
+    margin-bottom: 4rem;
+    box-shadow: .1rem .1rem .1rem .1rem white;
+}
+
+.maincontainer .container .producttypesection .producttype-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+
+}
+
+.maincontainer .container .producttypesection .producttype-container .producttype{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 30%;
+    height: 55rem;
+    border: .2rem solid white;
+    box-shadow: .1rem .1rem .2rem .2rem lightgray;
+    border-radius: 2rem;
+    text-align: center;
+    transition: all 300ms linear;
+}
+
+.maincontainer .container .producttypesection .producttype-container .producttype:hover{
+    width: 32%;
+    height: 56rem;
+    background-color:rgba(18,31,31,0.8);
+    cursor:pointer;
+    opacity: 1;
+    
+}
+
+
+.maincontainer .container .producttypesection .producttype-container .producttype img{
+    max-width: 75%;
+    height: 70%;
+    border: .2rem solid white;
+    box-shadow: .1rem .1rem .1rem .1rem lightgray;
+    border-radius: 2rem;
+    padding: 1rem;
+}
+
+.maincontainer .container .producttypesection .producttype-container .producttype h3{
+    font-size: 2.5rem;
+    font-weight: normal;
+    letter-spacing: .2rem;
+    text-decoration: underline;
+}
+
+.maincontainer .container .producttypesection .producttype-container .producttype a{
+}
+
+button{
+    width: 13rem;
+    height: 4rem;
+    font-size: 2rem;
+    letter-spacing: .1rem;
+    border-radius: 2rem;
+    font-weight: bold;
+    color: white;
+    background-color:rgba(0,0,0,0.1);
+    transition: all 100ms linear;
+
+}
+
+button:hover{
+    width: 16rem;
+    height: 4.4rem;
+    font-size: 2.3rem;
+    color: black;
+    background-color:rgba(255,255,255,1);
+    cursor: pointer;
+    border: .2rem solid darkgrey;
+    box-shadow: .1rem .1rem .1rem .1rem black;
+
+
+}
+
+ 
+
+footer {
+    height: 10rem;
+    margin-top: 10rem;
+    border: .1rem solid white;
+    box-shadow: .1rem .1rem .1rem .1rem white;
+}
+
+footer nav{
+    height: 50%;
+    border-bottom: .1rem solid white;
+    box-shadow: .1rem .1rem .1rem .1rem white;
+
+}
+
+footer .home {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+footer .home a button{
+    background-color: rgba(18, 31, 31, 0.2);
+    box-shadow: 1px 1px 2px 2px skyblue;
+    width: 10rem;
+    height: 3rem;
+    font-size: 2rem;
+    border-radius: 2rem;
+    
+}
+
+
+footer .home a button:hover{
+    width: 10.8rem;
+    height: 3.8rem;
+    font-size: 2.8rem;
+    color: white;
+    
+}
+
+#gtbtnleft {
+    background-color: rgba(18, 31, 31, 0.2);
+    box-shadow: 1px 1px 2px 2px skyblue;
+    position: fixed;
+    bottom: .5rem;
+    left: 1rem;
+    font-size: 1.5rem;
+    padding: 1rem 0.5rem; 
+}
+
+#gtbtnleft:hover{
+    font-size: 1.8rem;
+    opacity: 0.9;
+    color: white;
+}
+
+
+#gtbtnright {
+    background-color: rgba(18, 31, 31, 0.2);
+    box-shadow: 1px 1px 2px 2px skyblue;
+    position: fixed;
+    bottom: .5rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    padding: 1rem 0.5rem; 
+}
+
+
+#gtbtnright:hover {
+    font-size: 1.8rem;
+    opacity: 0.9;
+    color: white;
+}
+
+
+/*********************** Start of Media Query ***************************/
+
+
+/************ START OF MEDIA QUERY FOR DESKTOPS ************************/
+
+@media screen and (max-width:1440px)
+
+{
+
+    html{
+
+        font-size: 55%;
+    }
+
+    .container{
+        width: 90%;
+    }
+
+    header {
+
+        border-bottom: .2rem solid white;
+    }
+
+    nav a {
+        
+        font-size:1.6rem;
+    }
+
+    
+}
+
+
+/************ END OF MEDIA QUERY FOR DESKTOPS ************************/
+
+
+/************ START OF MEDIA QUERY FOR TABLETS ************************/
+
+@media screen and (max-width:960px)
+
+{
+
+    html{
+
+        font-size: 50%;
+    }
+
+    .container{
+        width: 90%;
+    }
+
+    header {
+
+        border-bottom: .2rem solid white;
+    }
+}
+
+
+/************ END OF MEDIA QUERY FOR DESKTOPS ************************/
+
+
+/************ START OF MEDIA QUERY FOR MOBILE PHONES ************************/
+
+
+@media screen and (max-width:630px)
+
+{
+
+    html{
+
+        font-size: 40%;
+    }
+
+    .container{
+        width: 92%;
+    }
+
+    header {
+
+        border-bottom: .2rem solid white;
+    }
+}
+
+
+/************ END OF MEDIA QUERY FOR MOBILE PHONE ************************/
+
+/************ START OF MEDIA QUERY FOR SMALL SCREEN MOBILE PHONES ************************/
+
+
+@media screen and (max-width:485px)
+
+{
+
+    html{
+
+        font-size: 25%;
+    }
+
+    .container{
+        width: 92%;
+    }
+
+    header {
+
+        border-bottom: .2rem solid white;
+    }
+}
+
+
+/************ END OF MEDIA QUERY FOR SMALL SCREEN MOBILE PHONE ************************/

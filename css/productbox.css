@@ -1,0 +1,276 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  margin-top: 8rem;
+  font-family: "Heebo", sans-serif;
+  background-image: url(../images/heroimages/lappagebcgimg.jpg);
+  background-attachment: fixed;
+  animation: lapbcgslider 15s infinite linear;
+}
+
+@keyframes lapbcgslider {
+  0% {
+    background-image: url(../images/heroimages/lappagebcgimg.jpg);
+  }
+  33% {
+    background-image: url(../images/heroimages/lappagebcgimg1.jpg);
+  }
+  66% {
+    background-image: url(../images/heroimages/lappagebcgimg2.jpg);
+  }
+}
+header {
+  height: 8.2rem;
+  border-bottom: 0.1rem solid white;
+  box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem skyblue;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  color: white;
+  letter-spacing: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: lapbcgslider 15s infinite linear;
+  background-image: url(../images/heroimages/lappagebcgimg.jpg);
+}
+
+header hr {
+  width: 45rem;
+  margin: 0;
+  height: 0.5rem;
+  box-shadow: 0.2rem 0.2rem;
+}
+
+.container {
+  max-width: 90%;
+  margin: auto;
+  margin-top: 12rem;
+  display: flex;
+  flex-direction: column;
+}
+
+header a {
+  display: inline-block;
+  margin-right: 1.5rem;
+}
+
+header a img {
+  height: 7rem;
+  margin-top: 0.7rem;
+}
+
+header a img:hover {
+  height: 7.5rem;
+  margin-top: 0.7rem;
+}
+
+header h1 {
+  font-weight: bold;
+  display: inline-block;
+  margin-left: 0.8rem;
+  font-size: 2.5rem;
+}
+
+#firstgth {
+  position: fixed;
+  top: 50%;
+  left: 90%;
+  text-align: right;
+}
+#secondgth {
+  position: fixed;
+  top: 50%;
+  right: 90%;
+  text-align: left;
+}
+body a {
+  text-decoration: none;
+}
+
+body a button {
+  background-color: rgba(18, 31, 31, 0.2);
+  height: 2.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  border-radius: 1rem;
+  border-color: white;
+  letter-spacing: 0.1rem;
+  box-shadow: 0.1rem 0.1rem 0.2rem 0.2rem skyblue;
+}
+
+body a button:hover {
+  font-size: 2rem;
+  height: 3rem;
+}
+
+.productbox {
+  border: 0.3rem solid lightblue;
+  max-width: 80%;
+  border-radius: 1rem;
+  box-shadow: 0.1rem 0.1rem 0.2rem 0.2rem skyblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: white;
+  margin: auto;
+  margin-bottom: 2rem;
+  opacity: 0.7;
+}
+
+.productbox:hover {
+  background-color: skyblue;
+  opacity: 0.9;
+  max-width: 85%;
+  height: 37.5rem;
+}
+2 .productbox .imagepart {
+  padding: 1.5rem;
+  max-width: 20%;
+}
+
+.productbox .imagepart iframe {
+  max-width: 100%;
+}
+
+.productbox .product {
+  border: 0.1rem solid slategray;
+  box-shadow: 0.1rem 0.1rem 0.2rem 0.2rem slategray;
+  max-width: 80%;
+  height: 30rem;
+  margin: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: black;
+}
+
+.productbox .product h1 {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 2vw;
+  margin: 0.8rem auto;
+  letter-spacing: 0.1rem;
+  color: white;
+}
+
+.productbox .product p {
+  margin-bottom: 0px;
+  color: white;
+  font-size: 1vw;
+
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+}
+
+.productbox .product a {
+  color: white;
+}
+
+.productbox .product a button {
+  height: 2.5rem;
+  border-radius: 1.5rem;
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 0px 1.5rem;
+  letter-spacing: 0.1rem;
+  box-shadow: 0.1rem 0.1rem 0.2rem 0.2rem slategray;
+}
+
+.productbox .product a button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+/*********************** Start of Media Query ***************************/
+
+/************ START OF MEDIA QUERY FOR DESKTOPS ************************/
+
+@media screen and (max-width: 1440px) {
+  html {
+    font-size: 55%;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  header {
+    border-bottom: 0.2rem solid white;
+  }
+
+  nav a {
+    font-size: 1.6rem;
+  }
+}
+
+/************ END OF MEDIA QUERY FOR DESKTOPS ************************/
+
+/************ START OF MEDIA QUERY FOR TABLETS ************************/
+
+@media screen and (max-width: 960px) {
+  html {
+    font-size: 50%;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  header {
+    border-bottom: 0.2rem solid white;
+  }
+}
+
+/************ END OF MEDIA QUERY FOR DESKTOPS ************************/
+
+/************ START OF MEDIA QUERY FOR MOBILE PHONES ************************/
+
+@media screen and (max-width: 6rem) {
+  html {
+    font-size: 40%;
+  }
+
+  .container {
+    width: 92%;
+  }
+
+  header {
+    border-bottom: 0.2rem solid white;
+  }
+}
+
+/************ END OF MEDIA QUERY FOR MOBILE PHONE ************************/
+
+/************ START OF MEDIA QUERY FOR SMALL SCREEN MOBILE PHONES ************************/
+
+@media screen and (max-width: 485px) {
+  html {
+    font-size: 25%;
+  }
+
+  .container {
+    width: 92%;
+  }
+
+  header {
+    border-bottom: 0.2rem solid white;
+  }
+}
+
+/************ END OF MEDIA QUERY FOR SMALL SCREEN MOBILE PHONE ************************/
