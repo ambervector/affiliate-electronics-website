@@ -1,8 +1,16 @@
 let goToBtn1 = document.getElementById("gtbtnleft");
 let goToBtn2 = document.getElementById("gtbtnright");
 
-goToBtn1.style.opacity = 0;
-goToBtn2.style.opacity = 0;
+const makeInvisible = (element) => {
+  element.style.opacity = 0;
+};
+
+const makeVisible = (element) => {
+  element.style.opacity = 1;
+};
+
+makeInvisible(goToBtn1);
+makeInvisible(goToBtn2);
 
 let windowY = window.scrollY;
 console.log(windowY);
@@ -12,12 +20,12 @@ window.addEventListener("scroll", () => {
   console.log(windowY);
 
   if (windowY >= 500) {
-    goToBtn1.style.opacity = 1;
-    goToBtn2.style.opacity = 1;
+    makeVisible(goToBtn1);
+    makeVisible(goToBtn2);
   }
 
   if (windowY < 500 || windowY > 3000) {
-    goToBtn1.style.opacity = 0;
-    goToBtn2.style.opacity = 0;
+    makeInvisible(goToBtn1);
+    makeInvisible(goToBtn2);
   }
 });
